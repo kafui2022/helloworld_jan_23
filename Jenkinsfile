@@ -25,4 +25,3 @@ pipeline {
       }
    }
 }
-Pipeline with Jenkinsfile
