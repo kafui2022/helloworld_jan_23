@@ -5,13 +5,13 @@ pipeline {
     }
     environment {
     registry = '423121350189.dkr.ecr.us-east-1.amazonaws.com/devop_repository'
-    registryCredential = 'Jenkins_ecr'
+    registryCredential = 'jenkins-ecr'
     dockerimage = ''
   }
     stages {
         stage('Checkout'){
             steps{
-                git branch: 'main', url: 'https://github.com/kafui2022/helloworld_jan_23.git'
+                git branch: 'main', url: 'https://github.com/kafui2022/helloworld_jan_22.git'
             }
         }
         stage('Code Build') {
